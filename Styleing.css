@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+.ProjectInfo{
+body{background-color: powderblue;}
+h1{color: blue;}
+p{color: red;}
+}
+
+.IThinkIKnow{
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
+	max-width: 1500px;
+	display: flex;
+	margin: center;
+	float: center;
+}
+
+/* Style the tab */
+.SMainTab {
+float: left;
+margin: left;
+width: 25%;
+max-width: 250px;
+border: 15px solid #abc;
+background-color: #f1f1f1;
+text-align: center;
+display: block;
+}
+
+/* Style the buttons that are used to open the tab content */
+.SMainTab Button {
+width: 100%;
+height: 75px;
+padding: 10px;
+  background-color: inherit;
+  border: solid;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+ float: center;
+ margin: center;
+}
+
+/* Change background color of buttons on hover */
+.SMainTab Button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.SMainTab Button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.STabStyle {
+  margin: right;
+  float: right;
+  border: 5%;
+  width: 75%;
+  text-align: center;
+  
+}
+
+article{
+	float: center;
+	padding: 1%;
+	background-color: #f1f1f1;
+	height: 1500px;
+	margin: center;
+}
+
+nav{
+	float: right;
+	height: 90%;
+	background: #abc;
+	padding: 20px;
+}
+
+nav ul{
+	list-style-type: right;
+	padding: 0;
+}
+
+section::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.GridContainer{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #abc;
+	padding: 10px;
+}
+.GridItem{
+	background-color: #f1f1f1;
+	width: 100%;
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 17px;
+}
+.ItemLeft{
+	grid-area: left;
+}
+.ItemCenter{
+	grid-area; center;
+}
+.ItemRight{
+	grid-area: right;
+}
+
+</style>
+
+</body>
+</html>
+
