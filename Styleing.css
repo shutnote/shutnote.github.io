@@ -10,15 +10,80 @@ h1{color: blue;}
 p{color: red;}
 }
 
-.IThinkIKnow{
-	padding-left: 10%;
-	padding-right: 10%;
-	width: 80%;
-	max-width: 1500px;
-	display: flex;
-	margin: center;
+.SMainHeader{
+	margin: auto;
 	float: center;
+	min-width: 1000px;
+	max-width: 1000px;
+	border: 15px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
 }
+
+.SMainBody{
+	margin: auto;
+	float: center;
+	width: 1000px;
+	min-width: 1000px;
+	max-width: 90%;
+	min-height: 1000px;
+	border: 15px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.SMainBodySide{
+	margin: auto;
+	float: right;
+	width: 200px;
+	max-width: 20%;
+	min-height: 990px;
+	border: 5px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.SMainContent{
+	margin: auto;
+	float: center;
+	width: 960px;
+	max-width: 90%;
+	height: 540;
+	border: 15px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.SMainContent Button:hover {
+  background-color: #ddd;
+}
+.ContentStuff{
+	float: left;
+}
+.leftbutton {
+	float: left;
+}
+.rightbutton{
+	float: right;
+}
+
+/* Create an active/current tablink class */
+.SMainContent Button.active {
+  background-color: #ccc;
+}
+
+.SMainProjects{
+float: left;
+margin: left;
+width: 78%;
+max-width: 780px;
+border: 5px solid #abc;
+background-color: #f1f1f1;
+text-align: center;
+display: block;
+}
+
 
 /* Style the tab */
 .SMainTab {
@@ -109,6 +174,15 @@ section::after{
 	cursor: pointer;
 	font-size: 17px;
 }
+.GridInfo{
+	background-color: #f1f100;
+	border: 3px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 17px;
+}
 .ItemLeft{
 	grid-area: left;
 }
@@ -119,7 +193,16 @@ section::after{
 	grid-area: right;
 }
 
+iframe[seamless]{
+	border: none;
+	
+	float: left;
+	margin: left;
+}
+
 </style>
+
+
 
 </body>
 </html>
