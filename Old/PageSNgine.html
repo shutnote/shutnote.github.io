@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="Styleing.css">
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+<body>
+
+<section>
+<div class="IThinkIKnow">
+<div class="SMainTab">
+<h3>Main: </h3>
+<a href="index.html"><button class=tablinks" onclick="OpenProject(event, 'Home')">Home</button></a>
+<h3>Projects: </h3>
+<a href="PageSNgine.html"><button class=tablinks" onclick="OpenProject(event, 'SNgine')">SNgine</button></a>
+<a href="PageVoxelSandbox.html"><button class=tablinks" onclick="OpenProject(event, 'Voxel')">Voxel Sandbox</button></a>
+<a href="PageShadowOfDivinity.html"><button class=tablinks" onclick="OpenProject(event, 'SoD')">Shadows of Divinity</button></a>
+<a href="PageCombatChaos.html"><button class=tablinks" onclick="OpenProject(event, 'CombatChaos')">Combat Chaos</button></a>
+<a href="PagePartyStation.html"><button class=tablinks" onclick="OpenProject(event, 'PartyStation')">Party Station</button></a>
+<a href="PageSpeedyDelivery.html"><button class=tablinks" onclick="OpenProject(event, 'UnityMobile')">Speedy Delivery</button></a>
+<a href="PageUnityFighter.html"><button class=tablinks" onclick="OpenProject(event, 'UnityMobile')">PVP Platform</button></a>
+<a href="PageUE5PvP.html"><button class=tablinks" onclick="OpenProject(event, 'PVEShooter')">PvP Shooter</button></a>
+</div>
+
+<div id="SNgine" class="STabStyle">
+<article>
+  <h3>SNgine</h3>
+  <p>SNgine is a 3D game engine built using C++, opengl and the Bullet physics engine.</p>
+  <p>The project included Window, keyboard, mouse and controller inputs, physics along with three types of rigidbody(Cube, Sphere, Capsuel), terrain, objects, cells/world space, Camera, UI rendering, Text rendering, UI buttons, Save/Loadings.</p>
+  <p>After the submission of the project, development continued by overhauling many of the systems present. This included the camera system, asset management, UI + Text rendering and images.</p>
+  <p>Overall this project achieved a 79%</p>
+  <a href="https://github.com/shutnote/SNGine3D">Github Link!</a>
+  
+  <button id="ReturnButton" onclick="UnDisplayText('SNWindow')">Return</button>
+  <div class "STabStyle">
+	<div id="SNWindow" style = "display: none;" class="GridInfo">
+	<div class="SMainTab">
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::Window')">SN::Window()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::InitUpdate')">SN::InitUpdate()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::LastUpdate')">SN::LastUpdate()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::LastUpdate')">SN::MouseControl()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::LastUpdate')">SN::SetCursor()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::LastUpdate')">SN::SetCamera()</button>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::LastUpdate')">SN::SetXShader()</button>
+  </div>
+		<p>Class Name: Window</p>
+		<p>Namespace: SN</p>
+		<p>Usage: To create and manage the main window that the engine uses for drawing, inputs, etc.</p>
+		<p>Functions:</p>
+		<div id="SN::Window::Window" style = "display: none;">
+			<p>This is the constructor class, it takes no parameters. Its used to start up the openGL context, set the resultion of the window, give it a name and set the openGL settings.</p>
+			<p>It also loads the default shaders into a main shader program as well as the Post processing and UI shader. Creates a basic quad that the camera is rendered onto.</p>
+			<p>It also starts up DS5W which is used for dualsense controller inputs(thought this feature is legacy).</p>
+		</div>
+		<div id="SN::Window::InitUpdate" style = "display: none;">
+			<p>This is the Inital Update function, it takes no parameters. It's called at the start of every frame.</p>
+			<p>It gets the window up time for the frame time/delta time calculation. It also clears the windows buffers(Colour and Depth).</p>
+			<p>It also handles the mouse escape and VSync inputs before looping through each of the Inputs created by a user.</p>
+		</div>
+	</div>
+  </div>
+  
+  
+  <div id="SNCamera" style = "display: none;" class="GridInfo">
+    <p>Class Name: Camera</p>
+	<p>Namespace: SN</p>
+	<p>Usage: To create a world camera that can render a scene using any shader program onto a texture.</p>
+	<p>Functions:</p>
+	<button id="AdditionalInfoButton" onclick="ShowAdditionalInfo('SN::Window::Camera')">SN::Camera()</button>
+	<div id="SN::Camera::Camera" style = "display: none;">
+		<p>This is the constructor class, it takes no parameters. Its used to start up the openGL context, set the resultion of the window, give it a name and set the openGL settings.</p>
+		<p>It also loads the default shaders into a main shader program as well as the Post processing and UI shader. Creates a basic quad that the camera is rendered onto.</p>
+		<p>It also starts up DS5W which is used for dualsense controller inputs(thought this feature is legacy).</p>
+	</div>
+  </div>
+  
+  <div id="SNShaderProgram" style = "display: none;" class="GridInfo">
+  
+  </div>
+  
+  <div id="GridInfoButtons">
+  <h3>Features: </h3>
+  <div class = "GridContainer">
+	<button onclick="DisplayText('SNWindow')" class="GridItem">SN::Window</button>
+	<button onclick="DisplayText('SNCamera')" class="GridItem">SN::Camera</button>
+	<button onclick="DisplayText('SNShaderProgram')" class="GridItem">SN::ShaderProgram</button>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Projectile</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Player</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Crate</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Input</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::FunctionCall</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Cell</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Terrain</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::AssetManager</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::UFrame</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::UIElement</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Text</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Characters</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::InputField</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Button</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::BaseModel</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::RayCast</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Physics</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Object</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Texture</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::SuperTexture</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Material</button></a>
+	<a href="PageUE5PvP.html"><button class="GridItem">SN::Lighting</button></a>
+  </div>
+ 
+  
+  <p>Youtube Video:</p>
+  <iframe width="48%" height="27%" src = "https://www.youtube.com/embed/c6pQIzdaKZM"> </iframe>
+  </div>
+</article>
+</div>
+</div>
+
+
+
+<script>
+var DisplayedText = "";
+var AdditionalInfoText = "";
+function DisplayText(_type){
+	DisplayedText = _type;
+	document.getElementById(_type).style.display = "block";
+	document.getElementById("ReturnButton").style.display = "block";
+	document.getElementById("GridInfoButtons").style.display = "none";
+}
+function UnDisplayText(_type){
+	document.getElementById(DisplayedText).style.display = "none";
+	document.getElementById("ReturnButton").style.display = "none";
+	document.getElementById("GridInfoButtons").style.display = "grid";
+}
+function ShowAdditionalInfo(_type){
+	document.getElementById(_type).style.display = "block";
+	if(AdditionalInfoText!=""){
+		document.getElementById(AdditionalInfoText).style.display = "none";
+	}
+	AdditionalInfoText = _type;
+}
+</script>

@@ -1,6 +1,26 @@
 <link rel="stylesheet" href="Styleing.css">
 <!DOCTYPE html>
+<script>
 
+function OpenInfo(ProjectName){
+	document.getElementById("ProjectDisplay").src = ProjectName;
+}
+
+function OpenProject(Event, ProjectName) {
+  var i, STabStyle, tablinks;
+  STabStyle = document.getElementsByClassName("STabStyle");
+  for (i = 0; i < STabStyle.length; i++) {
+    STabStyle[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(ProjectName).style.display = "block";
+  Event.currentTarget.className += " active";
+}
+OpenInfo("MPShooter.html");
+</script>
 <html>
 <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,40 +52,27 @@
 <p>Unreal</p>
 <p>OpenGl/GLSL</p>
 </div>
-
-
 <div class="SMainProjects">
-<button><p>MP Shooter</p></button>
+<button onclick="OpenInfo('MPShooter.html')"><p>MP Shooter</p></button>
 <button><p>Unity Fighter</p></button>
-<button><p>Shadow Of Divinity</p></button>
+<button onclick="OpenInfo('Monk/SOD.html')"><p>Shadow Of Divinity</p></button>
 <button><p>Unreal</p></button>
 <button><p>SNgine</p></button>
 <button><p>Combat Chaos</p></button>
 <button><p>Console</p></button>
 <button><p>Speedy Delievery</p></button>
 </div>
-<h1>Project: SOD</p>
-<iframe width = "78%" height = "100%" id="frame" src="Monk/index.html" scrolling="no"></iframe>
-<div class="contentStuff">
+
+<div class="SProjectMain">
+<iframe width = "100%" height = "100%" id="ProjectDisplay" src="" scrolling="no" frameborder="0"></iframe>
 
 
 </div>
-<h2>Project Info</h2>
-
-<p>This project was a university project</p>
-<p>This project achieved like ~80%</p>
-<p>This was a group project, I was the main programmer responsible for the following</p>
-<iframe width="50%" height="50%" src="https://www.youtube.com/embed/tgbNymZ7vqY"><iframe>
-</div>
-
-<div class="SMainContent">
-<div class="leftbutton">
-<button><img src="images/Test.png"><img></button>
-</div>
 
 </div>
+
 </section>
+
 
 </body>
 </html>
-

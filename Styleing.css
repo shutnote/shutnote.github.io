@@ -32,17 +32,6 @@ p{color: red;}
 	text-align: center;
 }
 
-.SMainBodySide{
-	margin: auto;
-	float: right;
-	width: 200px;
-	max-width: 20%;
-	min-height: 990px;
-	border: 5px solid #abc;
-	background-color: #f1f1f1;
-	text-align: center;
-}
-
 .SMainContent{
 	margin: auto;
 	float: center;
@@ -73,16 +62,7 @@ p{color: red;}
   background-color: #ccc;
 }
 
-.SMainProjects{
-float: left;
-margin: left;
-width: 78%;
-max-width: 780px;
-border: 5px solid #abc;
-background-color: #f1f1f1;
-text-align: center;
-display: block;
-}
+
 
 
 /* Style the tab */
@@ -130,6 +110,61 @@ padding: 10px;
   width: 75%;
   text-align: center;
   
+}
+/* buttons */
+.SMainProjects{
+	float: left;
+	margin: left;
+	width: 785px;
+	border: 5px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
+	display: block;
+}
+
+.SMainProjects Button {
+width: 98.125px;
+height: 75px;
+  background-color: inherit;
+  border: solid;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+ float: left;
+ margin: center;
+}
+
+.SMainBodySide{
+	margin: auto;
+	float: right;
+	width: 195px;
+	max-width: 200px;
+	min-height: 990px;
+	border: 5px solid #abc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.SProjectMain{
+	width: 785px;
+	float: left;
+	margin: left;
+	text-align: center;
+	background-color: #f1f1f1;
+	border: 5px solid #abc
+}
+.SProjectContent{
+	float: left;
+	margin: left;
+	text-align: center;
+	width: 785px;
+}
+.SProjectMainContent{
+	width: 80%;
+	height: 45%;
+	margin: center;
+	float: center;
 }
 
 article{
