@@ -1,66 +1,51 @@
 <link rel="stylesheet" href="Styleing.css">
 <!DOCTYPE html>
-<script>
+<script src="Script.js"></script>
 
-function OpenInfo(ProjectName){
-	document.getElementById("ProjectDisplay").src = ProjectName;
-}
-
-function OpenProject(Event, ProjectName) {
-  var i, STabStyle, tablinks;
-  STabStyle = document.getElementsByClassName("STabStyle");
-  for (i = 0; i < STabStyle.length; i++) {
-    STabStyle[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(ProjectName).style.display = "block";
-  Event.currentTarget.className += " active";
-}
-OpenInfo("MPShooter.html");
-</script>
 <html>
 <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
 
-<body>
+<body onload="OpenInfo('MPShooter.html')">
 
 <section>
 
+<img id="PreviewImage" src="images/Platformer/Gravity.png" onclick="EnlargeImage('')" style = "width: 98%; display: none; z-index: 100;"></img>
+<div id="TheRest">
 <div class="SMainHeader">
 <h1>HEADER</h1>
 </div>
 
 <div class="SMainBody">
 <div class="SMainBodySide">
-<img src="pfp2.JPG" width="80%"></img>
+<img src="pfp2.JPG" width="195px" height="195px"></img>
 <h1>ABOUT:</h1>
 <p>Name: Joe Simpson</p>
 <p>Degree Class: First</p>
 <p>Degree: Games Programming</p>
 <p>Uni: Kingston</p>
 <h2>SKILLS:</h2>
-<p>Github</p>
-<p>Visual Studio</p>
-<p>C++</p>
-<p>C#</p>
-<p>Python</p>
-<p>Unity</p>
-<p>Unreal</p>
-<p>OpenGl/GLSL</p>
+<div class="GridContainerIcons">
+<img src="images/CPPIcon.png"></img>
+<img src="images/UnityIcon.png"></img>
+<img src="images/UnrealIcon.png"></img>
+<img src="images/VSIcon.png"></img>
+<img src="images/GithubIcon.png"></img>
+<img src="images/PythonIcon.png"></img>
+<img src="images/OpenGLIcon.png"></img>
+<img src="images/BulletIcon.png"></img>
+</div>
 </div>
 <div class="SMainProjects">
-<button onclick="OpenInfo('MPShooter.html')"><p>MP Shooter</p></button>
-<button><p>Unity Fighter</p></button>
-<button onclick="OpenInfo('Monk/SOD.html')"><p>Shadow Of Divinity</p></button>
-<button><p>Unreal</p></button>
-<button><p>SNgine</p></button>
-<button><p>Combat Chaos</p></button>
-<button><p>Console</p></button>
-<button><p>Speedy Delievery</p></button>
+<button onclick="OpenInfo('MPShooter.html')"><img src="images/UnityIcon.png"></img><p>MP Shooter</p></button>
+<button onclick="OpenInfo('UnityPlatformer.html')"><img src="images/UnityIcon.png"></img><p>Unity Fighter</p></button>
+<button onclick="OpenInfo('Monk/SOD.html')"><img src="images/UnityIcon.png"></img><img src="pfp2.jpg"></img><p>Shadow Of Divinity</p></button>
+<button onclick="OpenInfo('HorrorUnreal.html')"><img src="images/UnrealIcon.png"></img><p>Horror</p></button>
+<button><img src="images/CPPIcon.png"></img><img src="images/OpenGLIcon.png"></img><p>SNgine</p></button>
+<button><img src="images/UnityIcon.png"></img><p>Combat Chaos</p></button>
+<button><img src="images/UnityIcon.png"></img><p>Console</p></button>
+<button><img src="images/UnityIcon.png"></img><p>Speedy Delievery</p></button>
 </div>
 
 <div class="SProjectMain">
@@ -70,7 +55,7 @@ OpenInfo("MPShooter.html");
 </div>
 
 </div>
-
+</div>
 </section>
 
 

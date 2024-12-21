@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="Styleing.css">
+<!DOCTYPE html>
+<script src = "Script.js">
+</script>
+<html>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+
+<body class="SProjectContent">
+<img id="PreviewImage" src="images/Platformer/Gravity.png" onclick="EnlargeImage('')" style = "width: 98%; display: none; z-index: 100;"></img>
+<section>
+<div id="TheRest">
+<h1>Shooter Multiplayer Game</h1>
+<img class="SProjectBanner" id="BannerImg" onclick="parent.EnlargeImage('images/Platformer.png')" src = "images/Platformer.png" img>
+<p>This is a 2D unity game made using unity netcode.</p>
+<p>This game is inspired by the PvP gamemode in new super mario bros DS.</p>
+<h3>Features</h3>
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('Gravity')">Gravity</button>
+<button class="GridItem" onclick="Toggle('FlameThrower')">FlameThrower</button>
+<button class="GridItem" onclick="Toggle('Electro')">Electro</button>
+
+<button class="GridItem" onclick="Toggle('Teleporter')">Teleporter</button>
+
+<button class="GridItem">Deathmatch</button>
+<button class="GridItem">Deathmatch</button>
+
+
+<div class="SProjectSubContent" style="display:none;" id="Gravity">
+<img id="GravityImg" src="images/Platformer/Gravity.png" onclick="EnlargeImage('GravityImg')"></img>
+<h4>This is a gravity powerup</h4>
+<p>The Gravity is used to pick up and move props.</p>
+<p>To make the gravity work well over high ping, clients create a ghost</p>
+<p>The ghost is client side and reacts on there end. Then the server one trails the ghost</p>
+</div>
+
+<div class="SProjectSubContent" style="display:none;" id="FlameThrower" id="FlameThrower">
+<img id="FlameThrowerImg" onclick="EnlargeImage('FlameThrowerImg')" src="images/Platformer/FlameThrower.png"></img>
+<h4>This is a FlameThrower powerup</h4>
+<p>The FlameThrower is used for area denial and launching the player.</p>
+<p>The Fire creates a small AOE when colliding, leading to an denial for other players.</p>
+<p>It also launches the player in the oppisite direction, acting as a sudo-jetpack.</p>
+</div>
+
+<div class="SProjectSubContent" style="display:none;" id="Electro" id="Electro">
+<h4>This is a Electro powerup</h4>
+</div>
+
+<div class="SProjectSubContent" style="display:none;" id="Teleporter" id="Teleporter">
+<img src="images/Platformer/FlameThrower.png"></img>
+<h4>Teleporter</h4>
+<p>Found around the map.</p>
+<p>One way.</p>
+<p>It also launches the player in the oppisite direction, acting as a sudo-jetpack.</p>
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+</body>
+</html>

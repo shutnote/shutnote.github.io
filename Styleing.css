@@ -135,6 +135,14 @@ height: 75px;
  margin: center;
 }
 
+.SMainProjects img{
+	width: 25px;
+	height: 25px;
+}
+.SMainProjects p{
+	
+}
+
 .SMainBodySide{
 	margin: auto;
 	float: right;
@@ -145,14 +153,22 @@ height: 75px;
 	background-color: #f1f1f1;
 	text-align: center;
 }
+.SMainBodySide img{
+	float: center;
+}
 
 .SProjectMain{
 	width: 785px;
+	height: 910px;
 	float: left;
 	margin: left;
 	text-align: center;
 	background-color: #f1f1f1;
 	border: 5px solid #abc
+}
+.SProjectBanner{
+	width: 720px;
+	height: 402px;
 }
 .SProjectContent{
 	float: left;
@@ -165,6 +181,18 @@ height: 75px;
 	height: 45%;
 	margin: center;
 	float: center;
+}
+.SProjectSubContent{
+	float: center;
+	margin: center;
+	text-align: center;
+	border: 5px solid #ff0000;
+	grid-column: span 3;
+}
+.SProjectSubContent img{
+	float: right;
+	margin: right;
+	max-width: 250px;
 }
 
 article{
@@ -194,20 +222,39 @@ section::after{
 }
 
 .GridContainer{
+	width: 700px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	background-color: #abc;
-	padding: 10px;
+	float: auto;
+	margin: auto;
+	
+}
+.GridContainerIcons{
+	width: 200px;
+	display: grid;
+	grid-template-columns: auto auto auto ;
+	background-color: #abc;
+	float: center;
+	margin: center;
+	
+}
+.GridContainerIcons img{
+	width: 50px;
+	height: 50px;
+	float: center;
+	margin: center;
 }
 .GridItem{
 	background-color: #f1f1f1;
-	width: 100%;
+	width: 233px;
 	border: 3px solid rgba(0, 0, 0, 0.8);
-	padding: 20px;
 	font-size: 30px;
 	text-align: center;
 	cursor: pointer;
 	font-size: 17px;
+	float: center;
+	margin: center;
 }
 .GridInfo{
 	background-color: #f1f100;
@@ -217,6 +264,8 @@ section::after{
 	text-align: center;
 	cursor: pointer;
 	font-size: 17px;
+	float: center;
+	margin: center;
 }
 .ItemLeft{
 	grid-area: left;
