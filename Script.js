@@ -15,7 +15,7 @@ function OpenProject(Event, ProjectName) {
   document.getElementById(ProjectName).style.display = "block";
   Event.currentTarget.className += " active";
 }
-this.OpenInfo("About.html");
+//this.OpenInfo("About.html");
 
 var Prev = 'Electro';
 function Toggle(Thing){
@@ -36,10 +36,12 @@ if(x.style.display === "none"){
 function EnlargeImage(Image){
 //var x = document.getElementById(Image);
 var y = document.getElementById("PreviewImage");
+var x = document.getElementById("PreviewImageClose");
 //var y = document.getElementById("PreviewImage");
 var z = document.getElementById("TheRest");
 if(y.style.display==="none"){
 	y.style.display = "block";
+	x.style.display = "inline";
 	y.src = Image;
 	//y.src = x.src;
 	//y.src = Image;
@@ -47,5 +49,6 @@ if(y.style.display==="none"){
 }else{
 	y.style.display = "none";
 	z.style.display = "block";
+	x.style.display = "none";
 }
 }

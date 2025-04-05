@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../Styleing.css">
+<!DOCTYPE html>
+<script src="../Script.js">
+<script>
+</script>
+
+<html>
+
+
+<section>
+<div id="TheRest">
+<h1>Name: Combat Chaos</h1>
+<h3>Description: Combat Chaos is a multiplayer game build in the unity game engine using the new Unity Netcode module. 
+I was the programmer in charge of the gamemodes(deathmatch, CTF, King of the hill, infection), the logic behind them and the selection logic.
+This project achieved an 85% mark.</h3>
+<h3>Features:</h3>
+
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('Modes')">Modes</button>
+<div class="SProjectSubContent" style="display:none;" id="Modes">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Modes</h4>
+<p>Fluff describing the modes and how they work. Structs that could be configured in the unity inspector to make diff modes</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Shoot')">Shooting Logic</button>
+<div class="SProjectSubContent" style="display:none;" id="Shoot">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Shooting.</h4>
+<p>Stuff about weapons. Shooting netcoding to make it feel responsive even at high ping, etc.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Extra')">???</button>
+<div class="SProjectSubContent" style="display:none;" id="Extra">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Come up with something to put here.</h4>
+<p>Bit empty over here.</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

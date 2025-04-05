@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="../Styleing.css">
+<!DOCTYPE html>
+<script src="../Script.js">
+
+</script>
+<html>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<img id="PreviewImage" src="images/Platformer/Gravity.png" onclick="EnlargeImage('')" style = "width: 98%; display: none; z-index: 100;"></img>
+<body class="SProjectContent">
+
+<section>
+<div id="TheRest">
+<h1>Party Station</h1>
+<iframe width="98%" style = "width: 90%; height: 50.625%; z-index: 100;" src = "https://www.youtube.com/embed/R46M2Vq-ZBA"> </iframe>
+<p>Note: Please upload the version with controller cam in the corner</p>
+<p>This is a Mario Party inspired game that was made for the playstation 5. It was a group university project. I made the 
+main menu along with two minigames and had to finish up a third before submission. The project achieved an 88% grade.
+(Due to an agreement with sony, the project source code nor a playable demo are available so a video will have too do.</p>
+<h3>Features</h3>
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('MainMenu')">Main Menu</button>
+<div class="SProjectSubContent" style="display:none;" id="MainMenu">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Main Menu</h4>
+<p>I made the main menu. IT allows you to either play a specific mini game or disable them and play 
+Tournament mode, which has you all competing across different minigames.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Balloon')">Balloon pop</button>
+<div class="SProjectSubContent" style="display:none;" id="Balloon">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Balloon pop</h4>
+<p>Balloon pop is a minigame where you have to blow up the balloon faster than everyone else. This minigame used the 
+adaptive triggers to simulate the balloon becoming harder to expand as it gets larger.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Potato')">Hot Potato</button>
+<div class="SProjectSubContent" style="display:none;" id="Potato">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Hot Potato</h4>
+<p>Hot Potato is a minigame where you have pass the hot potato to another player before it gets too hot.
+ This minigame made extensive use of both the coloured bar light and rumble to indicate how hot the potato was.
+ This minigame did not get as much polish as I was hoping for as my attention had to be diverted towards the 
+ bowling minigame.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Bowling')">Bowling</button>
+<div class="SProjectSubContent" style="display:none;" id="Bowling">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Bowling</h4>
+<p>Whilst this was not my game, I was required to finish it off and make last minuite changes to make the game
+ function before submission. This including adding the controller features(Rumble and adaptive triggers) as well
+  as fixing the physics of the ball and scoring. This unfortunatly had to be done quickly and resulted in the
+  hot Potato minigame not being as polished as I had hoped.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+</body>
+</html>

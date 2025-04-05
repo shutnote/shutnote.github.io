@@ -186,7 +186,7 @@ height: 75px;
 	float: center;
 	margin: center;
 	text-align: center;
-	border: 5px solid #ff0000;
+	border: 5px solid #000000;
 	grid-column: span 3;
 }
 .SProjectSubContent img{

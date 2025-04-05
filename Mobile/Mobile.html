@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="../Styleing.css">
+<!DOCTYPE html>
+<script src="../Script.js">
+<script>
+</script>
+
+<html>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+
+<body class="SProjectContent">
+
+<section>
+<div>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Speedy Delivery</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=375 height=625 style="width: 300px; height: 500px; background: #231F20"></canvas>
+    <script src="Build/BuildWeb2.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/BuildWeb2.data",
+        frameworkUrl: "Build/BuildWeb2.framework.js",
+        codeUrl: "Build/BuildWeb2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DoomZoomGloomJoomEoom",
+        productName: "Speedy Delivery",
+        productVersion: "0.2.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</div>
+
+</section>
+
+<section>
+<div id="TheRest">
+<h1>Name: Speedy Delievery</h1>
+<h4>Description: Speedy Delievery was a mobile game briefly published on the android app store. It was a university group project where I was the programmer for the project.
+Overall the project achieved a 62% mark.</h4>
+<h3>Features:</h3>
+
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('Controls')">Controls</button>
+<div class="SProjectSubContent" style="display:none;" id="Controls">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Stars')">Stars</button>
+<div class="SProjectSubContent" style="display:none;" id="Stars">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Design')">Design</button>
+<div class="SProjectSubContent" style="display:none;" id="Design">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Catch')">Catch</button>
+<div class="SProjectSubContent" style="display:none;" id="Catch">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Belt')">Belt</button>
+<div class="SProjectSubContent" style="display:none;" id="Belt">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Truck')">Truck</button>
+<div class="SProjectSubContent" style="display:none;" id="Truck">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</body>
+</html>

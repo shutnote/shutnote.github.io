@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="../Styleing.css">
+<!DOCTYPE html>
+<script src="../Script.js">
+<script>
+</script>
+
+<html>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+
+<body class="SProjectContent">
+
+<section>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Legend</title>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" width=720 height=405 tabindex="-1" style="width: 720px; height: 405px; background: #231F20"></canvas>
+    <script src="Build/WebBuild.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=0.6, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
+
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebBuild.data.gz",
+        frameworkUrl: "Build/WebBuild.framework.js.gz",
+        codeUrl: "Build/WebBuild.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Legend",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</div>
+
+</section>
+<section>
+
+
+<section>
+<div id="TheRest">
+<h1>Name: Crytures</h1>
+<h3>Description: Crytures is a rougelite cryture collecting/fighting game, Heavily inspired by Pokemon. It is the current project I am working on. </h3>
+<h3>Features:</h3>
+
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('Crytures')">Crytures</button>
+<div class="SProjectSubContent" style="display:none;" id="Crytures">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Cryture</h4>
+<p>Fluff describing the implementation and design. Health is HP, Attack is damage it can do, Defence is damage reduction, Stamina is how often can attack. Cryutures
+ can learn different moves for battle. They gain levels through battling and Adaptations.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Adaptations')">Adaptations</button>
+<div class="SProjectSubContent" style="display:none;" id="Adaptations">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Adaptations!</h4>
+<p>Adaptations are this games evolutions, something about changing appearnce, adaptations being different types, learning different moves. etc. The same cryture but with
+ different adaptations will look and play different. A stone bat will take more hits than an urban bat but be much slower.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Battle')">Battle Mechanics</button>
+<div class="SProjectSubContent" style="display:none;" id="Battle">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Battling other crytures is important for the game!</h4>
+<p>Fluff about the implementation and how battling works, it's not turn based but instead attacks are based on cryture stamina, high stamina = more attacks. Attacks
+vary in both stamina cost and attack power. Generally high damage moves cost more, resulting in oppenents getting more attacks off.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Inventory')">Inventory</button>
+<div class="SProjectSubContent" style="display:none;" id="Inventory">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Inventory!</h4>
+<p>Fluff about player inventory and different items. Capture rods for catching, Adaptation items for gaining adaptations, healing, etc.</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Boxes')">Cryture Box</button>
+<div class="SProjectSubContent" style="display:none;" id="Boxes">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>An interactable object in the world for saving and storing your crytures.</h4>
+<p>Fluff about implementation, how work, saving crytures, etc. </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('ProcGen')">Level Generation</button>
+<div class="SProjectSubContent" style="display:none;" id="ProcGen">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>This cutscene system is completely custom</h4>
+<p>Fluff about proc gen, the choice for it being open, etc. Different POI, minor POI's, etc.</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

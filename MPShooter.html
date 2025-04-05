@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="Styleing.css">
 <!DOCTYPE html>
+<script src="../Script.js">
 <script>
 </script>
 <html>
@@ -16,6 +17,41 @@
 <p>The game is heavily inspired by Halo</p>
 <p>It features player customisation, multiple weapons, map voting, mode voting</p>
 
+<h3>Features:</h3>
+
+<div class="GridContainer">
+
+<button class="GridItem" onclick="Toggle('Weapons')">Weapons</button>
+<div class="SProjectSubContent" style="display:none;" id="Cutscene">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>The game features 5 different weapons, each with there own customisable properties</h4>
+<p>Nodes are placed, these nodes can lead to other nodes for camera movemment, prop movement(Such as NPC, etc) and call functions when triggered. There are also zones 
+that wait till a condition is meet. Used in the tutorial section </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Multiplayer')">Multiplayer</button>
+<div class="SProjectSubContent" style="display:none;" id="Cutscene">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>The game features multiplayer!</h4>
+<p>Something about how it uses the unity netcode framework, same as the uni project </p>
+</div>
+
+<button class="GridItem" onclick="Toggle('MapVoting')">Map voting</button>
+<div class="SProjectSubContent" style="display:none;" id="Cutscene">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>Map voting</h4>
+<p>Players can vote for a map(I only ever made two tho) Inseart YT link to vid)</p>
+</div>
+
+<button class="GridItem" onclick="Toggle('Mode Voting')">Mode voting</button>
+<div class="SProjectSubContent" style="display:none;" id="Cutscene">
+<img id="WormImg" src="images/UnrealHorror/WormBP.png" onclick="EnlargeImage('WormImg')"></img>
+<h4>The game player customiation!</h4>
+<p>Something about how it uses the unity netcode framework, same as the uni project</p>
+</div>
+
+
+</div>
 
 </div>
 </div>

@@ -11,10 +11,12 @@
 
 <section>
 
-<img id="PreviewImage" src="images/Platformer/Gravity.png" onclick="EnlargeImage('')" style = "width: 98%; display: none; z-index: 100;"></img>
+<img id="PreviewImage" src="images/Platformer/Gravity.png" onclick="EnlargeImage('')" style = "width: 98%; display: none; z-index: 100;">
+<img id="PreviewImageClose" src="images/Close.png" onclick="EnlargeImage('')" style = "width: 5%; display: none; z-index: 101; position: absolute; top: 2%; right: 2%;"></img>
+</img>
 <div id="TheRest">
 <div class="SMainHeader">
-<h1>HEADER</h1>
+<h1>Joe Simpson</h1>
 </div>
 
 <div class="SMainBody">
@@ -25,6 +27,7 @@
 <p>Degree Class: First</p>
 <p>Degree: Games Programming</p>
 <p>Uni: Kingston</p>
+<a href="Resume.pdf" target="_blank">CV</a>
 <h2>SKILLS:</h2>
 <div class="GridContainerIcons">
 <img src="images/CPPIcon.png"></img>
@@ -38,18 +41,22 @@
 </div>
 </div>
 <div class="SMainProjects">
-<button onclick="OpenInfo('MPShooter.html')"><img src="images/UnityIcon.png"></img><p>MP Shooter</p></button>
-<button onclick="OpenInfo('UnityPlatformer.html')"><img src="images/UnityIcon.png"></img><p>Unity Fighter</p></button>
-<button onclick="OpenInfo('Monk/SOD.html')"><img src="images/UnityIcon.png"></img><img src="pfp2.jpg"></img><p>Shadow Of Divinity</p></button>
-<button onclick="OpenInfo('HorrorUnreal.html')"><img src="images/UnrealIcon.png"></img><p>Horror</p></button>
-<button><img src="images/CPPIcon.png"></img><img src="images/OpenGLIcon.png"></img><p>SNgine</p></button>
-<button><img src="images/UnityIcon.png"></img><p>Combat Chaos</p></button>
-<button><img src="images/UnityIcon.png"></img><p>Console</p></button>
-<button><img src="images/UnityIcon.png"></img><p>Speedy Delievery</p></button>
+<!---<button onclick="OpenInfo('MPShooter.html')"><img src="images/UnityIcon.png"></img><p>MP Shooter</p></button>--->
+<button onclick="OpenInfo('Cryture/Cryture.html')"><img src="images/UnityIcon.png"></img><img src="images/Play.png"></img><p>Crytures</p></button>
+<button onclick="OpenInfo('Monk/SOD.html')"><img src="images/UnityIcon.png"></img><img src="images/Play.png"></img><p>Shadow Of Divinity</p></button>
+<button onclick="OpenInfo('Mobile/Mobile.html')"><img src="images/UnityIcon.png"></img><img src="images/Play.png"></img><p>Speedy Delivery!</p></button>
+<button onclick="OpenInfo('UnityPlatformer.html')"><img src="images/UnityIcon.png"></img><img src="images/Youtube.png"></img><p>Unity Fighter</p></button>
+<button onclick="OpenInfo('Console/PartyStation.html')"><img src="images/UnityIcon.png"></img><img src="images/Youtube.png"></img><p>PartyStation</p></button>
+<button onclick="OpenInfo('CombatChaos/CombatChaos.html')"><img src="images/UnityIcon.png"></img><img src="images/Youtube.png"></img><p>Combat Chaos</p></button>
+<button onclick="OpenInfo('HorrorUnreal.html')"><img src="images/UnrealIcon.png"></img><img src="images/Youtube.png"></img><p>Horror</p></button>
+<button onclick="OpenInfo('SNgine/SNgine.html')"><img src="images/GithubIcon.png"></img><img src="images/Youtube.png"></img><img src="images/CPPIcon.png"></img><p>SNgine</p></button>
+
+<!--<button><img src="images/UnityIcon.png"></img><p>Speedy Delievery</p></button>-->
+<!--<button></img><p>More...</p></button>-->
 </div>
 
 <div class="SProjectMain">
-<iframe width = "100%" height = "100%" id="ProjectDisplay" src="" scrolling="no" frameborder="0"></iframe>
+<iframe width = "100%" height = "100%" id="ProjectDisplay" src="" style="overflow-y: scroll;" frameborder="0"></iframe>
 
 
 </div>
