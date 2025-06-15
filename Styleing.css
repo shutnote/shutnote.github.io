@@ -10,13 +10,19 @@ h1{color: blue;}
 p{color: red;}
 }
 
+:root{
+	--BackgroundColour: powderblue;
+	--BorderColour: gray;
+	
+}
+
 .SMainHeader{
 	margin: auto;
 	float: center;
-	min-width: 1000px;
+	min-width: 1250px;
 	max-width: 1000px;
-	border: 15px solid #abc;
-	background-color: #f1f1f1;
+	border: 15px solid var(--BorderColour);
+	background-color: var(--BackgroundColour);
 	text-align: center;
 }
 
@@ -24,11 +30,11 @@ p{color: red;}
 	margin: auto;
 	float: center;
 	width: 1000px;
-	min-width: 1000px;
+	min-width: 1250px;
 	max-width: 90%;
 	min-height: 1000px;
-	border: 15px solid #abc;
-	background-color: #f1f1f1;
+	border: 15px solid var(--BorderColour);
+	background-color: var(--BackgroundColour);
 	text-align: center;
 }
 
@@ -38,8 +44,8 @@ p{color: red;}
 	width: 960px;
 	max-width: 90%;
 	height: 540;
-	border: 15px solid #abc;
-	background-color: #f1f1f1;
+	border: 15px solid var(--BorderColour);
+	background-color: var(--BackgroundColour);
 	text-align: center;
 }
 
@@ -71,8 +77,8 @@ float: left;
 margin: left;
 width: 25%;
 max-width: 250px;
-border: 15px solid #abc;
-background-color: #f1f1f1;
+border: 15px solid var(--BorderColour);
+background-color: var(--BackgroundColour);
 text-align: center;
 display: block;
 }
@@ -82,7 +88,7 @@ display: block;
 width: 100%;
 height: 75px;
 padding: 10px;
-  background-color: inherit;
+  background-color: #ff0000;
   border: solid;
   outline: none;
   cursor: pointer;
@@ -94,7 +100,7 @@ padding: 10px;
 
 /* Change background color of buttons on hover */
 .SMainTab Button:hover {
-  background-color: #ddd;
+  background-color: #ff0000;
 }
 
 /* Create an active/current tablink class */
@@ -114,30 +120,44 @@ padding: 10px;
 /* buttons */
 .SMainProjects{
 	float: left;
-	margin: left;
-	width: 785px;
-	border: 5px solid #abc;
-	background-color: #f1f1f1;
+	margin: auto;
+	width: 195px;
+	max-width: 200px;
+	min-height: 990px;
+	/*border: 5px solid #abc;*/
+	background-color: var(--BackgroundColour);
 	text-align: center;
-	display: block;
 }
 
 .SMainProjects Button {
-width: 98.125px;
+width: 100%;
 height: 75px;
-  background-color: inherit;
+  background-color: #abc;
   border: solid;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 14px;
+ float: left;
+ margin: center;
+ transition: 0.5s;
+}
+
+.SMainProjects Button:hover {
+width: 100%;
+height: 150px;
+  background-color: #cde;
+  border: solid;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
   font-size: 14px;
  float: left;
  margin: center;
 }
 
 .SMainProjects img{
-	width: 25px;
-	height: 25px;
+	width: 50px;
+	height: 50px;
 }
 .SMainProjects p{
 	
@@ -149,8 +169,8 @@ height: 75px;
 	width: 195px;
 	max-width: 200px;
 	min-height: 990px;
-	border: 5px solid #abc;
-	background-color: #f1f1f1;
+	/*border: 5px solid #abc;*/
+	background-color: var(--BackgroundColour);
 	text-align: center;
 }
 .SMainBodySide img{
@@ -158,13 +178,16 @@ height: 75px;
 }
 
 .SProjectMain{
-	width: 785px;
-	height: 910px;
-	float: left;
-	margin: left;
+	width: 68%;
+	height: 100%;
+	float: center;
+	margin: center;
 	text-align: center;
-	background-color: #f1f1f1;
-	border: 5px solid #abc
+	transition: 1s;
+	display: flex;
+	background-color: var(--BackgroundColour);
+	border-left: 5px solid var(--BorderColour);
+	border-right: 5px solid var(--BorderColour);
 }
 .SProjectBanner{
 	width: 720px;
@@ -172,29 +195,52 @@ height: 75px;
 }
 .SProjectContent{
 	float: left;
+	position: absolute;
 	margin: left;
 	text-align: center;
-	width: 785px;
+
 }
 .SProjectMainContent{
 	width: 80%;
 	height: 45%;
 	margin: center;
 	float: center;
+	transition: 1s;
 }
 .SProjectSubContent{
 	float: center;
 	margin: center;
 	text-align: center;
-	border: 5px solid #000000;
+	border: 1% solid var(--BackgroundColour);
 	grid-column: span 3;
+	transition: 1s;
 }
 .SProjectSubContent img{
 	float: right;
 	margin: right;
 	max-width: 250px;
+	transition: 1s;
 }
 
+.SProjectSplit{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.SProjectItem{
+	max-width: 100%;
+	height: 100%;
+	border: 2px solid var(--BackgroundColour);
+}
+.SProjectItem button{
+	max-width: 35%;
+	height: 15%;
+	border: 2px solid var(--BackgroundColour);
+}
+.SProjectItem img{
+	max-width: 50%;
+	max-height: 50%;
+	border: 2px solid var(--BackgroundColour);
+}
 article{
 	float: center;
 	padding: 1%;

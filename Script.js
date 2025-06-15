@@ -1,5 +1,50 @@
 function OpenInfo(ProjectName){
-	document.getElementById("ProjectDisplay").src = ProjectName;
+	parent.document.getElementById("ProjectDisplay").src = ProjectName;
+	
+	var r = document.querySelector(':root');
+	var BackgroundColour = 'Gray';
+	var BorderColour = '#606060';
+	
+	if(ProjectName=="Cryture/Cryture.html"){
+		BackgroundColour = 'Gray'//#808080
+		BorderColour = '#606060'
+	}
+	if(ProjectName=="Monk/SOD.html"){
+		BackgroundColour = 'Crimson'//#DC143c
+		BorderColour = '#BA021A'
+	}
+	if(ProjectName=='Mobile/Mobile.html'){
+		BackgroundColour = 'OliveDrab'
+		BorderColour = '#496C01'
+	}
+	if(ProjectName=='UnityPlatformer.html'){
+		BackgroundColour = 'OrangeRed'//#FF4500
+		BorderColour = '#DD2300'
+	}
+	if(ProjectName=='Console/PartyStation.html'){
+		BackgroundColour = 'Pink'//#FFC0CB
+		BorderColour = '#DD9EA9'
+	}
+	if(ProjectName=='CombatChaos/CombatChaos.html'){
+		BackgroundColour = 'SandyBrown'//#F4A460
+		BorderColour = '#D2823e'
+	}
+	if(ProjectName=='HorrorUnreal.html'){
+		BackgroundColour = 'DimGray'//#696969
+		BorderColour = '#474747'
+	}
+	if(ProjectName=='SNgine/SNgine.html'){
+		BackgroundColour = 'Aquamarine'//#7FFFD4
+		BorderColour = '#5DDDB2'
+	}
+	if(ProjectName=='Misc/Misc.html'){
+		BackgroundColour = 'Gray'//#7FFFD4
+		BorderColour = '#606060'
+	}
+    r.style.setProperty('--BackgroundColour', BackgroundColour);
+    r.style.setProperty('--BorderColour', BorderColour);
+
+
 }
 
 function OpenProject(Event, ProjectName) {
@@ -14,8 +59,16 @@ function OpenProject(Event, ProjectName) {
   }
   document.getElementById(ProjectName).style.display = "block";
   Event.currentTarget.className += " active";
+  
+  
 }
 //this.OpenInfo("About.html");
+
+
+function Init(){
+	var r = document.getElementsById("SMainProjects");
+	r.style.width = "0px";
+}
 
 var Prev = 'Electro';
 function Toggle(Thing){
